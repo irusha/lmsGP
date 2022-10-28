@@ -55,7 +55,6 @@ function Body() {
     function handleClick(itemClicked) {
         console.log(itemClicked)
         setCurrentOption(itemClicked - 1)
-        aaa(itemClicked)
         const k = [];
         options.forEach(element => {
             if (element.key == itemClicked) {
@@ -81,9 +80,7 @@ function Body() {
 
 }
 
-function aaa(value) {
-    console.log(value)
-}
+
 
 function AppBody(props) {
     //JSON object from the api is here
@@ -93,11 +90,7 @@ function AppBody(props) {
             last_Access: "Yesterday"
         },
         {
-            courseName: "Programming",
-            last_Access: "Yesterday"
-        },
-        {
-            courseName: "Program Designing",
+            courseName: "Mathematics for computing",
             last_Access: "Yesterday"
         },
         {
@@ -105,11 +98,11 @@ function AppBody(props) {
             last_Access: "Yesterday"
         },
         {
-            courseName: "Programming",
+            courseName: "Mathematics for computing",
             last_Access: "Yesterday"
         },
         {
-            courseName: "Program Designing",
+            courseName: "Mathematics for computing",
             last_Access: "Yesterday"
         },
     ])
@@ -125,36 +118,61 @@ function AppBody(props) {
 
     switch (props.option) {
         case 0:
-            return (
+            if (courses.length > 1) {
+                return (
 
-                <div className='app-body-contents'>
-                    <h1 className='body-header'>Courses</h1>
-                    <div className='card-holder'>
+                    <div className='app-body-contents'>
+                        <h1 className='body-header'>Courses</h1>
+                        <div className='card-holder'>
 
 
-                        {
-                            courses.map(currentCourse => {
-                                return (
-                                    <div className='courseCard'>
-                                        <h6>{currentCourse.courseName}</h6>
-                                        <img src='https://mathematicsart.com/wp-content/uploads/2021/09/100867216_948187235602651_8439077284521967616_n.jpg'></img>
-                                        <p>{currentCourse.last_Access}</p>
-                                    </div>
-                                )
-                            })
-                        }
+                            {
+                                courses.map(currentCourse => {
+                                    return (
+                                        <div className='courseCard'>
+                                            <h6>{currentCourse.courseName}</h6>
+                                            <img src='https://mathematicsart.com/wp-content/uploads/2021/09/100867216_948187235602651_8439077284521967616_n.jpg'></img>
+                                            <p>{currentCourse.last_Access}</p>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+
                     </div>
+                )
+            }
+            else {
+                return (
+                    <div className='app-body-contents' style={{float: "left"}}>
+                        <h1 className='body-header'>Courses</h1>
+                        <div className='card-holder'>
 
-                </div>
-            )
+                            {
+                                courses.map(currentCourse => {
+                                    return (
+                                        <div className='courseCard'>
+                                            <h6>{currentCourse.courseName}</h6>
+                                            <img src='https://mathematicsart.com/wp-content/uploads/2021/09/100867216_948187235602651_8439077284521967616_n.jpg'></img>
+                                            <p>{currentCourse.last_Access}</p>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+
+                    </div>)
+            }
 
         case 1:
             return (
                 <div className='app-body-contents'>
                     <h1 className='body-header'>Your Study Rooms</h1>
+
                     <div className='card-holder'>
                         {
                             rooms.map(currentCourse => {
+
                                 return (
                                     <div className='courseCard'>
                                         <h6>{currentCourse.courseName}</h6>
