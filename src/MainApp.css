@@ -17,7 +17,6 @@ body {
     flex-wrap: wrap;
     width: fit-content;
     padding: 10px;
-
 }
 
 .menubutton {
@@ -39,6 +38,49 @@ body {
     border-radius: 20px;
 }
 
+.app-body-contents-one-item {
+    margin-left: 20px;
+    width: fit-content;
+    float: left;
+    display: block;
+}
+
+.card-holder-one-item {
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    padding: 10px;
+}
+
+.courseCard-one-item {
+    margin-right: 40px;
+    width: 200px;
+    cursor: pointer;
+    display: block;
+    height: 320px;
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    z-index: 2;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+    transition: all 0.1s ease-in-out 0.01s;
+    border-radius: 20px;
+}
+
+.courseCard-one-item:hover {
+    transform: scale(1.05);
+
+    transition: all 0.2s ease-in-out 0.01s;
+}
+
+.courseCard-one-item img {
+    width: 100px;
+    margin-left: 4.5px;
+    margin-top: 15px;
+}
+
 .courseCard:hover {
     transform: scale(1.05);
 
@@ -50,7 +92,6 @@ body {
     margin-left: 4.5px;
     margin-top: 15px;
 }
-
 
 .app-body-contents {
     margin-left: 20px;
@@ -89,9 +130,22 @@ body {
 }
 
 @media only screen and (max-width: 538px) {
+
+    .app-body-contents-one-item {
+        margin: auto;
+        width: fit-content;
+        float: none;
+        display: block;
+    }
+
+    .app-body-contents-one-item h1 {
+        text-align: center;
+    }
+
+
     .app-body-contents {
         width: fit-content;
-        margin-left: 30px;
+        margin: auto;
         align-items: center;
     }
 
@@ -112,6 +166,8 @@ body {
 
     .card-holder {
         width: fit-content;
+
+        margin-left: 40px;
     }
 
 }
@@ -119,12 +175,13 @@ body {
 @media only screen and (max-width: 460px) {
     .app-body-contents {
         width: fit-content;
-        margin: auto;
+        margin-left: 30px;
         align-items: center;
     }
 
     .card-holder {
         display: block;
+        margin: auto;
     }
 
 
@@ -148,5 +205,32 @@ body {
         border-radius: 5px;
         transition: 0.3s ease;
     }
+
+    .courseCard-one-item {
+        margin-right: 0px;
+        width: 200px;
+        cursor: pointer;
+        display: block;
+        height: 320px;
+        padding: 20px;
+        margin-left: 30px;
+        margin-top: 30px;
+        z-index: 2;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+        transition: all 0.1s ease-in-out 0.01s;
+        border-radius: 20px;
+    }
+
+
+    .card-holder-one-item {
+        display: block;
+        width: fit-content;
+        padding: 10px;
+        margin: auto;
+    }
+
+
+
 
 }

@@ -101,14 +101,22 @@ function AppBody(props) {
             courseName: "Mathematics for computing",
             last_Access: "Yesterday"
         },
-        {
-            courseName: "Mathematics for computing",
-            last_Access: "Yesterday"
-        },
     ])
 
     const [rooms, setRooms] = useState(
         [
+            {
+                courseName: "Mathematics classroom",
+                last_Class: "Yesterday"
+            },
+            {
+                courseName: "Mathematics classroom",
+                last_Class: "Yesterday"
+            },
+            {
+                courseName: "Mathematics classroom",
+                last_Class: "Yesterday"
+            },
             {
                 courseName: "Mathematics classroom",
                 last_Class: "Yesterday"
@@ -144,14 +152,14 @@ function AppBody(props) {
             }
             else {
                 return (
-                    <div className='app-body-contents' style={{float: "left"}}>
+                    <div className='app-body-contents-one-item'>
                         <h1 className='body-header'>Courses</h1>
-                        <div className='card-holder'>
+                        <div className='card-holder-one-item'>
 
                             {
                                 courses.map(currentCourse => {
                                     return (
-                                        <div className='courseCard'>
+                                        <div className='courseCard-one-item'>
                                             <h6>{currentCourse.courseName}</h6>
                                             <img src='https://mathematicsart.com/wp-content/uploads/2021/09/100867216_948187235602651_8439077284521967616_n.jpg'></img>
                                             <p>{currentCourse.last_Access}</p>
