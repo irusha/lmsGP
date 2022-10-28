@@ -1,0 +1,133 @@
+body {
+    background-color: white;
+}
+
+#lastOption {
+    margin-right: 30px;
+}
+
+.body-header {
+    margin: 30px;
+
+}
+
+.card-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    padding: 10px;
+
+}
+
+.courseCard {
+    margin-right: 40px;
+    width: 150px;
+    cursor: pointer;
+    display: block;
+    height: 250px;
+    padding: 20px;
+    margin-top: 30px;
+    z-index: 2;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+    transition: all 0.1s ease-in-out 0.01s;
+    border-radius: 20px;
+}
+
+.courseCard:hover {
+    transform: scale(1.05);
+
+    transition: all 0.2s ease-in-out 0.01s;
+}
+
+.courseCard img {
+    width: 100px;
+    margin-left: 4.5px;
+    margin-top: 15px;
+}
+
+.app-body-contents {
+    margin-left: 20px;
+    width: fit-content;
+    display: block;
+}
+
+.mainAppBody {}
+
+
+@media only screen and (min-width: 740px) {
+    .courseCard {
+        margin-right: 30px;
+        width: 200px;
+        cursor: pointer;
+        display: block;
+        height: 320px;
+        padding: 20px;
+        margin-top: 30px;
+        z-index: 2;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+        transition: all 0.1s ease-in-out 0.01s;
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (max-width: 658px){
+    .courseCard {
+        margin-right: 0%;
+        width: 200px;
+        cursor: pointer;
+        display: block;
+        height: 320px;
+    }
+}
+
+@media only screen and (max-width: 538px) {
+    .app-body-contents {
+        width: fit-content;
+        margin-left: 30px;
+        align-items: center;
+    }
+
+    .courseCard {
+        margin-right: 40px;
+        width: 150px;
+        cursor: pointer;
+        display: block;
+        height: 250px;
+        padding: 20px;
+        margin-top: 30px;
+        z-index: 2;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+        transition: all 0.1s ease-in-out 0.01s;
+        border-radius: 20px;
+    }
+
+    .card-holder {
+        width: fit-content;
+    }
+
+}
+
+@media only screen and (max-width: 460px) {
+    .app-body-contents {
+        width: fit-content;
+        margin: auto;
+        align-items: center;
+    }
+
+    .card-holder {
+        display: block;
+    }
+
+    .courseCard {
+        margin-right: 0%;
+        width: 200px;
+        cursor: pointer;
+        display: block;
+        height: 320px;
+    }
+
+}
