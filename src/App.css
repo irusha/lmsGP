@@ -109,8 +109,6 @@ a {
 
 }
 
-
-
 .sidebar-selected {
   padding-bottom: 15px;
   font-family: 'Inter', sans-serif;
@@ -204,7 +202,7 @@ a {
   display: none;
   position: absolute;
   background-color: #50A4F1;
-  top:68px;
+  top: 68px;
   width: 100%;
   z-index: 1;
 }
@@ -214,9 +212,17 @@ a {
   color: rgb(255, 255, 255);
   font-weight: 400;
   font-size: large;
-  padding: 10px 40px;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
   text-decoration: none;
   display: block;
+}
+
+.dropdown-content p:hover {
+  background-color: #d5e4e46c;
+  transition: 0.3s ease;
 }
 
 .form-input {
