@@ -89,18 +89,6 @@ function AppBody(props) {
             courseName: "Mathematics for computing",
             last_Access: "Yesterday"
         },
-        {
-            courseName: "Mathematics for computing",
-            last_Access: "Yesterday"
-        },
-        {
-            courseName: "Mathematics for computing",
-            last_Access: "Yesterday"
-        },
-        {
-            courseName: "Mathematics for computing",
-            last_Access: "Yesterday"
-        },
     ])
 
     const [rooms, setRooms] = useState(
