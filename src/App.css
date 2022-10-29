@@ -317,6 +317,19 @@ a {
   }
 
 }
+@media only screen and (max-width: 565px) {
+  .menu2 li{
+    color: aquamarine;
+    display: none;
+  }
+
+  .logo {
+    font-size: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+}
 
 
 
@@ -333,7 +346,7 @@ a {
     transition: all 0.2s ease-in-out 0.01s;
   }
 
-  .menu2 li, .menu li {
+  .menu2 li{
     color: aquamarine;
     display: none;
   }
@@ -342,11 +355,6 @@ a {
     padding: 0%;
   }
 
-  .logo {
-    font-size: 32px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
   
   
 }

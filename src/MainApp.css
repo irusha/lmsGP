@@ -129,6 +129,22 @@ body {
     }
 }
 
+@media only screen and (max-width: 565px){
+    .menubutton {
+        display: block;
+        margin-right: 25px;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .menubutton:hover {
+        background-color: #d5e4e46c;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+}
+
 @media only screen and (max-width: 538px) {
 
     .app-body-contents-one-item {
@@ -196,18 +212,6 @@ body {
         height: 320px;
     }
 
-    .menubutton {
-        display: block;
-        margin-right: 25px;
-        cursor: pointer;
-        padding: 5px;
-    }
-
-    .menubutton:hover {
-        background-color: #d5e4e46c;
-        border-radius: 5px;
-        transition: 0.3s ease;
-    }
 
     .courseCard-one-item {
         margin-right: 0px;
