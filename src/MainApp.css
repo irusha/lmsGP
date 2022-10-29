@@ -19,9 +19,7 @@ body {
     padding: 10px;
 }
 
-.menubutton {
-    display: none;
-}
+
 
 .courseCard {
     margin-right: 40px;
@@ -129,21 +127,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 565px){
-    .menubutton {
-        display: block;
-        margin-right: 25px;
-        cursor: pointer;
-        padding: 5px;
-    }
 
-    .menubutton:hover {
-        background-color: #d5e4e46c;
-        border-radius: 5px;
-        transition: 0.3s ease;
-    }
-
-}
 
 @media only screen and (max-width: 538px) {
 
