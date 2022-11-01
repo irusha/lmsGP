@@ -5,6 +5,7 @@
     margin: 0px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.338)), url("https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/newscms/2020_21/3359781/200521-college-student-laptop-stock-cs-419p.jpg");
     height: 100%;
+    background-attachment: fixed;
     background-size: cover;
     /* Center and scale the image nicely */
     background-position: center;
